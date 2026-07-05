@@ -100,7 +100,6 @@ function boot() {
   if (pricingGrid) {
     pricingGrid.innerHTML = C.pricing.map(p => `
       <div class="price-card${p.popular ? ' popular' : ''}">
-        ${p.popular ? '<span class="popular-badge">MOST POPULAR</span>' : ''}
         <h3>${p.name}</h3>
         <div class="price">${p.price}</div>
         <div class="sub">${p.sub}</div>
