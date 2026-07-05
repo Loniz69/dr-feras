@@ -22,7 +22,7 @@ window.CLINIC = {
     email:    "",
     address:  "Al Khan St - Al Khalidiya District - Al Qasba - Sharjah - UAE",
     city:     "Al Qasba, Sharjah",
-    mapsUrl:  "https://www.google.com/maps?cid=3299250148146438813&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    mapsUrl:  "https://maps.google.com/?cid=3299250148146438813",
   },
 
   hours: [
