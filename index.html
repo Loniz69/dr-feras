@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title><!-- set by script.js from clinic-config.js -->
+<meta name="description" content="">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/favicon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="marquee"><div class="marquee-track"><!-- built by script.js --></div></div>
+
+<header>
+  <nav class="nav">
+    <a href="#" class="logo"><span class="logo-dot"></span> <span class="logo-text"></span></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Before &amp; After</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#findus">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#" target="_blank" class="btn btn-outline maps-link">Open in Maps</a>
+      <a href="#" target="_blank" class="btn btn-gold wa-link">Book on WhatsApp</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="badge">⭐ Al Qasba's Trusted Dental Practice</span>
+      <h1>A smile you're<br><em>proud to show</em></h1>
+      <p>Expert general and cosmetic dentistry by <span data-cfg="doctorName"></span> — licensed, precise, and committed to care that puts you first.</p>
+      <div class="hero-actions">
+        <a href="#" target="_blank" class="btn btn-gold wa-link">Book on WhatsApp</a>
+        <a href="#booking" class="btn btn-outline-light">📅 Book Online</a>
+      </div>
+      <div class="hero-tags" data-cfg="heroTags"></div>
+    </div>
+    <div class="stat-grid"><!-- built by script.js --></div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="trust-grid"><!-- built by script.js --></div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <span class="eyebrow">Our Services</span>
+    <h2 class="section-title reveal" style="margin-bottom:40px;">Everything your smile needs, under one roof</h2>
+    <div class="services-layout">
+      <div class="service-list" id="serviceList"><!-- built by script.js --></div>
+      <div class="service-preview" id="servicePreview"><!-- filled by JS --></div>
+    </div>
+    <div class="view-all-wrap"><a href="#pricing" class="btn btn-outline">View all services →</a></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <img src="images/doctor.jpg" alt="Dr. Feras Chakhachiro — General &amp; Cosmetic Dentist" loading="lazy">
+    <div>
+      <!-- TEMPLATE: update bio text in clinic-config.js → doctor.bio1 / bio2 -->
+      <span class="eyebrow">About <span data-cfg="doctorName"></span></span>
+      <h2>A healthy smile is <em>quiet confidence</em></h2>
+      <p data-cfg="doctorBio1"></p>
+      <p data-cfg="doctorBio2"></p>
+      <div class="about-tags"><!-- built by script.js --></div>
+      <a href="#booking" class="link-arrow">Book a consultation →</a>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Pricing</span>
+        <h2>Transparent pricing,<br>no surprises</h2>
+      </div>
+      <a href="#booking" class="link-arrow">Book a consultation →</a>
+    </div>
+    <div class="pricing-grid"><!-- built by script.js --></div>
+    <div class="pricing-footnote">Full cost explained before any treatment begins — no surprises, no pressure.</div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Smile Gallery</span>
+        <h2 class="section-title">Real results, real patients</h2>
+      </div>
+      <a href="#gallery" class="link-arrow">View full gallery →</a>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-card reveal">
+        <div class="gallery-img-wrap">
+          <img src="images/gallery-veneers-before-after.jpg" alt="Dental veneers before and after" loading="lazy">
+          <span class="tag-before">BEFORE</span><span class="tag-after">AFTER</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Dental Veneers</h4>
+          <div class="row"><span class="mini-tag before">BEFORE</span><span class="txt muted">Chipped, discoloured teeth with uneven edges</span></div>
+          <div class="row"><span class="mini-tag after">AFTER</span><span class="txt">E-max porcelain veneers · natural shade match · 2 visits</span></div>
+        </div>
+      </div>
+      <div class="gallery-card reveal">
+        <div class="gallery-img-wrap">
+          <img src="images/gallery-whitening-before-after.jpg" alt="Teeth whitening before and after" loading="lazy">
+          <span class="tag-before">BEFORE</span><span class="tag-after">AFTER</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Teeth Whitening</h4>
+          <div class="row"><span class="mini-tag before">BEFORE</span><span class="txt muted">Yellowing and surface staining from daily habits</span></div>
+          <div class="row"><span class="mini-tag after">AFTER</span><span class="txt">Professional whitening · noticeably brighter · single visit</span></div>
+        </div>
+      </div>
+      <div class="gallery-card reveal">
+        <div class="gallery-img-wrap">
+          <img src="images/gallery-fillings-before-after.jpg" alt="Dental fillings before and after" loading="lazy">
+          <span class="tag-before">BEFORE</span><span class="tag-after">AFTER</span>
+        </div>
+        <div class="gallery-info">
+          <h4>Composite Fillings</h4>
+          <div class="row"><span class="mini-tag before">BEFORE</span><span class="txt muted">Decay and discoloration on molar surfaces</span></div>
+          <div class="row"><span class="mini-tag after">AFTER</span><span class="txt">Tooth-coloured composite fillings · same-day · natural finish</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="view-all-wrap"><a href="#gallery" class="btn btn-outline">See full smile gallery →</a></div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <span class="eyebrow">Patient Stories</span>
+    <h2 class="section-title reveal" style="margin-bottom:40px;">What patients are saying</h2>
+    <div class="t-grid"><!-- built by script.js --></div>
+    <div class="reviews-cta"><a href="https://www.google.com/maps/place/DR.+FERAS+CHAKHACHIRO" target="_blank" class="link-arrow">See all 32 reviews on Google ⭐⭐⭐⭐⭐</a></div>
+  </div>
+</section>
+
+<section class="findus" id="findus">
+  <div class="container findus-grid">
+    <div>
+      <span class="eyebrow">Find Us</span>
+      <h2>Located in <span data-cfg="city"></span></h2>
+      <div class="findus-detail">
+        <div class="label">Address</div>
+        <div class="val" data-cfg="address"></div>
+      </div>
+      <div class="findus-detail">
+        <div class="label">Phone</div>
+        <div class="val"><a class="phone-link" href="#"></a></div>
+      </div>
+      <div class="findus-detail">
+        <div class="label">Hours</div>
+        <div class="val" data-cfg="hours"></div>
+      </div>
+      <div class="findus-actions">
+        <a href="#" target="_blank" class="btn btn-gold wa-link">Book on WhatsApp</a>
+        <a href="#booking" class="link-arrow">Make an appointment →</a>
+      </div>
+      <div style="margin-top:16px;"><a href="https://www.google.com/maps/place/DR.+FERAS+CHAKHACHIRO" target="_blank" class="link-arrow">⭐ Read our Google reviews →</a></div>
+    </div>
+    <img src="images/clinic-photo.jpg" alt="Dr. Feras Dental clinic" loading="lazy">
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container booking-grid">
+    <div>
+      <span class="eyebrow">Book an Appointment</span>
+      <h2>Your free consultation is one message away</h2>
+      <p>Fill in your details below and we'll open WhatsApp with your message pre-filled — just tap Send.</p>
+    </div>
+    <form class="book-form-card" id="bookingForm">
+      <div class="form-group"><label>Your Name</label><input type="text" id="f-name" required></div>
+      <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" id="f-phone" required></div>
+      <div class="form-group">
+        <label>Treatment Interested In</label>
+        <select id="f-treatment">
+          <option value="">Select a service...</option>
+          <option>Teeth Whitening</option>
+          <option>Dental Veneers</option>
+          <option>Dental Implants</option>
+          <option>Braces / Clear Aligners</option>
+          <option>Scaling &amp; Polishing</option>
+          <option>Root Canal</option>
+          <option>Dental Bridges / Crowns</option>
+          <option>Fillings</option>
+          <option>Not sure — want a consultation</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Preferred Date</label><input type="date" id="f-date"></div>
+      <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;">Send via WhatsApp</button>
+      <p class="form-note">This opens WhatsApp with your details pre-filled. We respond within the hour.</p>
+    </form>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">Book Today</span>
+    <h2>Your first consultation is a conversation, not a commitment.</h2>
+    <p><span data-cfg="doctorShort"></span> will assess your teeth, explain your options honestly, and give you a clear cost estimate — before anything begins. No pressure, ever.</p>
+    <div class="cta-actions">
+      <a href="#" target="_blank" class="btn btn-gold wa-link">Book on WhatsApp</a>
+      <a href="#booking" class="link-arrow" style="align-self:center;">Prefer to self-book a time →</a>
+    </div>
+    <div class="hero-tags" data-cfg="ctaTags"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo logo-text"></div>
+      <!-- TEMPLATE: update tagline in clinic-config.js or edit directly here -->
+      <p>Expert general and cosmetic dentistry in <span data-cfg="city"></span>. Precision care, honest advice, beautiful results.</p>
+    </div>
+    <div>
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Before &amp; After</a></li>
+        <li><a href="#services">Teeth Whitening</a></li>
+        <li><a href="#services">Dental Veneers</a></li>
+        <li><a href="#services">Dental Implants</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>MORE SERVICES</h4>
+      <ul>
+        <li><a href="#services">Braces &amp; Aligners</a></li>
+        <li><a href="#services">Scaling &amp; Polishing</a></li>
+        <li><a href="#services">Root Canal</a></li>
+        <li><a href="#services">Dental Fillings</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>VISIT US</h4>
+      <ul>
+        <li data-cfg="address"></li>
+        <li><a class="phone-link" href="#"></a></li>
+        <li><a href="#" target="_blank" class="wa-link">WhatsApp</a></li>
+      </ul>
+      <h4 style="margin-top:20px;">HOURS</h4>
+      <ul data-cfg="hoursFooter"><!-- built by script.js --></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 <span class="logo-text"></span>. All rights reserved.</span>
+    <span><span data-cfg="city"></span> · Licensed &amp; Registered</span>
+  </div>
+</footer>
+
+<div class="mobile-sticky-bar">
+  <a href="#" target="_blank" class="btn btn-gold wa-link">Contact on WhatsApp</a>
+  <a href="#" target="_blank" class="btn btn-outline maps-link">Open in Maps</a>
+</div>
+
+<script src="clinic-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
